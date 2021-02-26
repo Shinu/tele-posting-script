@@ -3,8 +3,6 @@ from config import *
 from telethon.tl.types import UpdateChatDefaultBannedRights
 import traceback
 import time
-import os
-from os import environ
 
 print("[+] Script started")
 client = TelegramClient(session_name, api_id, api_hash).start(session_name)
