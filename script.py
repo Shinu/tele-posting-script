@@ -1,10 +1,16 @@
 from telethon.sync import TelegramClient, events
-from config import *
 from telethon.tl.types import UpdateChatDefaultBannedRights
 import traceback
 import time
 import os
 from os import environ
+
+api_id = environ['api_id']
+api_hash = environ['api_hash']
+#Enter your phone number.
+session_name = environ['session_name']
+group_username = environ['group_username']
+send_msg = environ['send_msg']
 
 print("[+] Script started")
 client = TelegramClient(session_name, api_id, api_hash).start(session_name)
